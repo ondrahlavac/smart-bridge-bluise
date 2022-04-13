@@ -1,8 +1,8 @@
 {
-  "name": "Bluise",
-  "shortName": "Bluise",
-  "description": "A Nuxt.js & Netlify CMS boilerplate.",
+  "name": "Smart Bridge Web Site",
+  "shortName": "Smart Bridge",
+  "description": "Simple web site for the Smard Bridge company",
   "themeColor": "#0b3765",
   "backgroundColor": "#ffffff",
-  "lang": "en"
+  "lang": "cs-CZ"
 }
