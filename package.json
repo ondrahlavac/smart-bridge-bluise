@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-netlifycms",
-  "version": "0.0.1",
-  "description": "Yo",
-  "author": "Gomah",
+  "name": "smart-bridge-bluise",
+  "version": "0.0.2",
+  "description": "Simple webpage for the Smart Bridge company",
+  "author": "Ondra Hlavac",
   "private": true,
   "scripts": {
     "dev": "nuxt-ts -o",
