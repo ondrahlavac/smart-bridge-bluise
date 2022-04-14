@@ -1,6 +1,6 @@
 {
-  "title": "Co jsou Internet-of-Things",
+  "title": "Co jsou Internet of Things",
   "subtitle": "bla bla bla TODO",
-  "content": "whoa whoa whoa a co bude sakra tady? TODO",
+  "content": "* Internet věcí neboli „Internet of Things“ („IoT“) je v současnosti tématem, které hýbe technologickým světem. Díky rychlému rozvoji nových bezdrátových technologií a pokročilým možnostem analýzy dat diametrálně roste počet inteligentních zařízení připojených k internetu různými technologiemi. Internet věcí se dotýká např. oblasti sledování a zabezpečení objektů, zásilek, vozidel nebo celé škály měřících zařízení, sledování zvířat, sledování kvality ovzduší, dohled pouličních světel, semaforů a odpadových systémů, správa parkovacích míst, atd.\n* Fenomén internetu věcí pak umožňuje nejen sbírat z míst dosud nedostupných (např. z míst bez stálého zdroje elektřiny nebo díky nízké ceně senzorů i z míst, kde to bylo dosud finančně nemožné), lokálně vyhodnocovat získaná data a nastavit základní reakce a upozornění, ale i vzdáleně ovládat zařízení a na základě centrální analýzy dat i predikovat chování, vytvářet modely z různých vstupních dat a hlavně vzdáleně zpřístupnit získaná data pomocí mobilních nebo internetových aplikací.\n* Společnost SmartBridge zajišťuje komplexní služby v oblasti internetu věcí - od zajištění hardwaru (čidla/ sensory/ monitorovací zařízení) pro sběr dat až po vývoj a poskytnutí mobilních a internetových aplikací vytvořených pro potřebu dané služby a klienta včetně následného dohledu a zákaznické péče.",
   "seoDescription": "Tady bude nějaké seo ohledně IOT TODO"
 }

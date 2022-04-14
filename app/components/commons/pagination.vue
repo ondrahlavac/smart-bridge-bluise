@@ -18,12 +18,7 @@
 
     <div class="hidden md:flex">
       <nuxt-link to="/blog" class="pagination-link">1</nuxt-link>
-      <nuxt-link
-        v-for="page in paginationMax"
-        :key="page + 1"
-        :to="`/blog/page/${page + 1}`"
-        class="pagination-link"
-      >
+      <nuxt-link v-for="page in paginationMax" :key="page + 1" :to="`/blog/page/${page + 1}`" class="pagination-link">
         {{ page + 1 }}
       </nuxt-link>
     </div>

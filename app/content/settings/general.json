@@ -1,8 +1,8 @@
 {
   "title": "Jsme váš poradce v oblasti IoT",
   "titleTemplate": "| SmartBridge",
-  "welcomeText": "# Jsme Smart Bridge - váš poradce v oblasti IoT a technologií\n\nNávrh projektu pro implementaci IoT\n\nProjektový management\n\nDotace\n\nPoradenství v oblasti technologií",
-  "logo": "/images/uploads/logo.svg",
+  "welcomeText": "# Jsme Smart Bridge - váš poradce v oblasti IoT a technologií",
+  "logo": "/images/uploads/smart-bridge-logo.png",
   "icon": "/images/uploads/logo.png",
   "loadingColor": "#0b3765",
   "seoDescription": "",
