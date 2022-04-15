@@ -21,7 +21,7 @@
       "~/*": ["./app/*"],
       "@/*": ["./app/*"]
     },
-    "types": ["@types/node", "@types/jest", "@nuxt/types"]
+    "types": ["@types/node", "@types/jest", "@nuxt/types", "webpack-env"]
   },
   "include": ["./app/**/*.ts", "./app/**/*.vue", "./app/**/*.js"],
   "exclude": ["node_modules"]

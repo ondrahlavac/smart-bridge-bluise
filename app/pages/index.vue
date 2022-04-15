@@ -87,7 +87,6 @@
 
         <div class="flex flex-col w-full">
           <h2>Dotace</h2>
-          <component :is="pica" />
         </div>
 
         <div class="bg-gray-50 overflow-hidden">
@@ -99,7 +98,9 @@
               <dl class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
                 <div v-for="oblast in poradenskeOblasti" :key="oblast.name">
                   <dt>
-                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white"></div>
+                    <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                      <img class="h-6 w-6 text-white" aria-hidden="true" alt="icon" />
+                    </div>
                     <p class="mt-5 text-lg leading-6 font-medium text-gray-900">{{ oblast.name }}</p>
                   </dt>
                   <dd class="mt-2 text-base text-gray-500">
@@ -118,15 +119,13 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
 import settings from '@/content/settings/general.json';
-import { ChipIcon, InboxIcon, LightningBoltIcon, ScaleIcon, SparklesIcon, StatusOnlineIcon } from '@heroicons/vue/outline';
 
 const oblastiPoradenstvi = [
-  { name: `Komunikační technologie a IoT`, description: ``, icon: StatusOnlineIcon },
-  { name: `Industry 4.0`, description: ``, icon: ChipIcon },
-  { name: `Regulace trhu elektronických komunikací`, description: ``, icon: ScaleIcon },
-  { name: `Energetika`, description: `Komunikační infrastruktura, AMM, Smart Metering`, icon: LightningBoltIcon },
+  { name: `Komunikační technologie a IoT`, description: `` },
+  { name: `Industry 4.0`, description: `` },
+  { name: `Regulace trhu elektronických komunikací`, description: `` },
+  { name: `Energetika`, description: `Komunikační infrastruktura, AMM, Smart Metering` },
 ];
-const pica = InboxIcon;
 
 @Component({
   // Called to know which transition to apply
@@ -138,10 +137,6 @@ export default class Home extends Vue {
   welcomeText = settings.welcomeText;
 
   poradenskeOblasti = oblastiPoradenstvi;
-
-  setup() {
-    return { pica };
-  }
 
   get posts(): Post[] {
     return this.$store.state.posts;
