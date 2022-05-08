@@ -11,6 +11,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
+import { MetaInfo } from 'vue-meta';
 
 @Component({
   // Called to know which transition to apply
@@ -21,16 +22,42 @@ import { Component, Vue } from 'nuxt-property-decorator';
 
     return 'slide-right';
   },
+
+  head(): MetaInfo {
+    return {
+      title: this.page.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.seoDescription,
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: this.page.seoMetaImage,
+        },
+      ],
+    };
+  },
 })
 export default class Dotace extends Vue {
   page!: Page;
 
   async asyncData({ params, payload }): Promise<{ page: Page }> {
-    console.log(`sfd -  ${params.page} `);
+    console.log(`dostali jsme async page? -  ${params} `);
     if (payload) {
       return { page: payload };
     }
-    return { page: payload };
+    try {
+      const page = require(`@/content/pages/dotace.json`);
+
+      return {
+        page,
+      };
+    } catch (e) {
+      throw new Error('Not found');
+    }
   }
 }
 </script>

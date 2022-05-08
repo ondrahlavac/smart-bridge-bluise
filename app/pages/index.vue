@@ -1,5 +1,25 @@
 <template>
   <section class="home">
+    <!-- Hero card -->
+    <div class="relative">
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+          <div class="absolute inset-0">
+            <img class="h-full w-full object-cover" src="images/uploads/IoT-banner.png" alt="People working on laptops" />
+            <div class="absolute inset-0 bg-indigo-700 mix-blend-multiply"></div>
+          </div>
+          <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+            <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+              <span class="block text-white">Jsme Smart Bridge</span>
+              <span class="block text-indigo-200">váš poradce v oblasti IoT a technologií</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More main page content here... -->
+
     <div class="py-24 md:py-36 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div class="flex flex-col w-full xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
         <div v-html="$md.render(welcomeText)" class="home__welcome markdown" />

@@ -3,9 +3,6 @@ backend:
   name: git-gateway
   branch: master
 
-# Publish mode https://www.netlifycms.org/docs/configuration-options/#publish-mode
-publish_mode: editorial_workflow
-
 # Media and Public Folders https://www.netlifycms.org/docs/configuration-options/#media-and-public-folders
 media_folder: 'app/static/images/uploads' # Media files will be stored in the repo under images/uploads
 public_folder: '/images/uploads'
