@@ -45,13 +45,13 @@ export default class Dotace extends Vue {
   page!: Page;
 
   async asyncData({ params, payload }): Promise<{ page: Page }> {
-    console.log(`dostali jsme async page? -  ${params} `);
     if (payload) {
       return { page: payload };
     }
     try {
       const page = require(`@/content/pages/dotace.json`);
 
+      console.log('ooo', page.content);
       return {
         page,
       };
