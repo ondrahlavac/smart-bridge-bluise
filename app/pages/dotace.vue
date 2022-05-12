@@ -44,7 +44,7 @@ import { MetaInfo } from 'vue-meta';
 export default class Dotace extends Vue {
   page!: Page;
 
-  async asyncData({ params, payload }): Promise<{ page: Page }> {
+  async asyncData({ payload }): Promise<{ page: Page }> {
     if (payload) {
       return { page: payload };
     }
