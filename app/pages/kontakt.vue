@@ -14,6 +14,12 @@
               </p>
               <dl class="mt-8 text-base text-gray-500">
                 <div>
+                  <dt class="sr-only">Název společnosti</dt>
+                  <dd>
+                    <p>SmartBridge s.r.o.</p>
+                  </dd>
+                </div>
+                <div>
                   <dt class="sr-only">Adresa</dt>
                   <dd>
                     <p>Na Bateriích 822/9</p>
@@ -42,28 +48,28 @@
                     <span class="ml-3"> Martin Bek </span>
                   </dd>
                 </div>
-                <div class="mt-3">
-                  <dt class="sr-only">Telefon</dt>
-                  <dd class="flex">
-                    <div class="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                        />
-                      </svg>
-                    </div>
-                    <span class="ml-3"> +420 000 000 000 </span>
-                  </dd>
-                </div>
+                <!--                <div class="mt-3">-->
+                <!--                  <dt class="sr-only">Telefon</dt>-->
+                <!--                  <dd class="flex">-->
+                <!--                    <div class="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true">-->
+                <!--                      <svg-->
+                <!--                        xmlns="http://www.w3.org/2000/svg"-->
+                <!--                        class="h-6 w-6"-->
+                <!--                        fill="none"-->
+                <!--                        viewBox="0 0 24 24"-->
+                <!--                        stroke="currentColor"-->
+                <!--                        stroke-width="2"-->
+                <!--                      >-->
+                <!--                        <path-->
+                <!--                          stroke-linecap="round"-->
+                <!--                          stroke-linejoin="round"-->
+                <!--                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"-->
+                <!--                        />-->
+                <!--                      </svg>-->
+                <!--                    </div>-->
+                <!--                    <span class="ml-3"> +420 000 000 000 </span>-->
+                <!--                  </dd>-->
+                <!--                </div>-->
                 <div class="mt-3">
                   <dt class="sr-only">E-mail</dt>
                   <dd class="flex">
@@ -83,32 +89,10 @@
                         />
                       </svg>
                     </div>
-                    <span class="ml-3"> bek@smartbridge.cz </span>
+                    <span class="ml-3"> <a href="mailto:bek@smartbridge.cz">bek@smartbridge.cz</a> </span>
                   </dd>
                 </div>
                 <div class="mt-8">
-                  <dt class="sr-only">Název společnosti</dt>
-                  <dd class="flex">
-                    <div class="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                        />
-                      </svg>
-                    </div>
-                    <span class="ml-3"> SmartBridge s.r.o. </span>
-                  </dd>
-                </div>
-                <div class="mt-3">
                   <dt class="sr-only">Identifikační číslo organizace</dt>
                   <dd class="flex">
                     <div class="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true">

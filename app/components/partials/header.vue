@@ -2,7 +2,7 @@
   <section>
     <header>
       <div class="relative bg-white">
-        <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <nuxt-link to="/">
               <span class="sr-only">Smart Bridge</span>
