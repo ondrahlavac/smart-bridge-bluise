@@ -33,7 +33,20 @@
                 <div>
                   <div>
                     <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                      <InboxIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                        />
+                      </svg>
                     </span>
                   </div>
                   <div class="mt-6">
@@ -62,7 +75,20 @@
                 <div>
                   <div>
                     <span class="h-12 w-12 rounded-md flex items-center justify-center bg-indigo-600">
-                      <SparklesIcon class="h-6 w-6 text-white" aria-hidden="true" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-white"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                        />
+                      </svg>
                     </span>
                   </div>
                   <div class="mt-6">
