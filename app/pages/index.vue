@@ -102,14 +102,6 @@
                   Máme zkušenosti s řízením velkých projektů v řádech desítek milionů korun. Pro řízení projektů používáme vlastní metodiku
                   projektového řízení, která vychází z metodik Prince2 a IPMA
                 </p>
-                <div class="mt-6">
-                  <a
-                    href="#"
-                    class="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
-                  >
-                    Get started
-                  </a>
-                </div>
               </div>
             </div>
           </div>
