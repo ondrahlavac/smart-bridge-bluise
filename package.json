@@ -5,10 +5,10 @@
   "author": "Ondra Hlavac",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts -o",
-    "build": "nuxt-ts build",
-    "start": " nuxt-ts start",
-    "generate": "nuxt-ts generate",
+    "dev": "nuxt -o",
+    "build": "nuxt build",
+    "start": " nuxt start",
+    "generate": "nuxt generate",
     "test:lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore app/",
     "test:unit": "cross-env BABEL_ENV=test jest --coverage",
     "test": "npm run test:lint"
@@ -29,7 +29,6 @@
   "dependencies": {
     "@headlessui/vue": "^1.5.0",
     "@heroicons/vue": "^1.0.6",
-    "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/eslint-module": "^3.1.0",
     "@nuxtjs/markdownit": "^2.0.0",
     "@nuxtjs/pwa": "^3.3.5",
