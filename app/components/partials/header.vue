@@ -11,8 +11,8 @@
           </div>
           <div class="-mr-2 -my-2 md:hidden">
             <div
-              @click="showMobileMenu = true"
-              @keydown.enter="showMobileMenu = true"
+              @click="mobileMenuShow = true"
+              @keydown.enter="mobileMenuShow = true"
               class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
               <span class="sr-only">Otevřít nabídku</span>
@@ -51,7 +51,11 @@
           leave-from-class="opacity-100 scale-100"
           leave-to-class="opacity-0 scale-95"
         >
-          <div v-if="mobileMenuShow" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div
+            v-if="mobileMenuShow"
+            class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+            style="z-index: 100"
+          >
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
               <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
@@ -60,7 +64,7 @@
                   </div>
                   <div class="-mr-2">
                     <div
-                      @click="mobileMenuShow = !mobileMenuShow"
+                      @click="mobileMenuShow = false"
                       @keydown.esc="mobileMenuShow = false"
                       class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                     >
@@ -80,7 +84,7 @@
                   </div>
                 </div>
                 <div class="mt-6">
-                  <nav class="grid grid-cols-1 gap-7" @click="mobileMenuShow = false" @keydown.enter="mobileMenuShow = false">
+                  <nav class="grid grid-cols-1 gap-7">
                     <nuxt-link to="/" @click="mobileMenuShow = false" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                       <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
                         <svg
@@ -174,6 +178,6 @@ export default class Header extends Vue {
 
   logo = settings.logo;
 
-  mobileMenuShow = true;
+  mobileMenuShow = false;
 }
 </script>
