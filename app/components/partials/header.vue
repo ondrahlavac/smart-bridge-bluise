@@ -11,8 +11,8 @@
           </div>
           <div class="-mr-2 -my-2 md:hidden">
             <div
-              @click="showMenu()"
-              @keydown.enter="showMenu()"
+              @click="showMobileMenu = true"
+              @keydown.enter="showMobileMenu = true"
               class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
               <span class="sr-only">Otevřít nabídku</span>
@@ -51,11 +51,7 @@
           leave-from-class="opacity-100 scale-100"
           leave-to-class="opacity-0 scale-95"
         >
-          <div
-            v-if="mobileMenuShow"
-            class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-            style="z-index: 100"
-          >
+          <div v-if="mobileMenuShow" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
               <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
@@ -149,7 +145,7 @@
                 </div>
               </div>
               <div class="py-6 px-5">
-                <div class="mt-6" @click="mobileMenuShow = false" @keydown.enter="mobileMenuShow = false">
+                <div class="mt-6" @click="showMobileMenu = false" @keydown.enter="window.alert('hide plz')">
                   <nuxt-link
                     to="/kontakt"
                     class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
@@ -179,13 +175,5 @@ export default class Header extends Vue {
   logo = settings.logo;
 
   mobileMenuShow = true;
-
-  showMenu = () => {
-    this.mobileMenuShow = true;
-  };
-
-  hideMenu = () => {
-    this.mobileMenuShow = false;
-  };
 }
 </script>
