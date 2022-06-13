@@ -10,7 +10,8 @@
                 <img class="h-8 w-auto sm:h-10" :src="logo" alt="SmartBridge" />
               </nuxt-link>
             </div>
-            <div class="-mr-2 -my-2 md:hidden sm:pt-12">
+            <div class="-mr-2 -my-2 md:hidden">
+              <p class="block md:hidden text-center text-white">&nbsp;...<br />&nbsp;</p>
               <button
                 @click="mobileMenuShow = !mobileMenuShow"
                 @keydown.enter="mobileMenuShow = mobileMenuShow"
