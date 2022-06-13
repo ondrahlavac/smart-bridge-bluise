@@ -2,44 +2,47 @@
   <section>
     <header>
       <div class="relative bg-white">
-        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
-          <div class="flex justify-start lg:w-0 lg:flex-1">
-            <nuxt-link to="/">
-              <span class="sr-only">Smart Bridge</span>
-              <img class="h-8 w-auto sm:h-10" :src="logo" alt="SmartBridge" />
-            </nuxt-link>
-          </div>
-          <div class="-mr-2 -my-2 md:hidden">
-            <div
-              @click="mobileMenuShow = !mobileMenuShow"
-              @keydown.enter="mobileMenuShow = true"
-              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-            >
-              <span class="sr-only">Otevřít nabídku</span>
-              <svg
-                class="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
+        <div class="relative z-20">
+          <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+              <nuxt-link to="/">
+                <span class="sr-only">Smart Bridge</span>
+                <img class="h-8 w-auto sm:h-10" :src="logo" alt="SmartBridge" />
+              </nuxt-link>
             </div>
-          </div>
-          <div class="hidden md:flex space-x-10">
-            <nuxt-link to="/" class="text-base font-medium text-gray-500 hover:text-gray-900"> O nás </nuxt-link>
-            <nuxt-link to="/iot" class="text-base font-medium text-gray-500 hover:text-gray-900"> Internet of Things </nuxt-link>
-            <nuxt-link to="/dotace" class="text-base font-medium text-gray-500 hover:text-gray-900"> Dotace </nuxt-link>
-          </div>
-          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <nuxt-link
-              to="/kontakt"
-              class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-              >Kontakt
-            </nuxt-link>
+            <div class="-mr-2 -my-2 md:hidden">
+              <p class="block md:hidden text-center text-white">&nbsp;...<br />&nbsp;</p>
+              <button
+                @click="mobileMenuShow = !mobileMenuShow"
+                @keydown.enter="mobileMenuShow = mobileMenuShow"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              >
+                <span class="sr-only">Otevřít nabídku</span>
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="hidden md:flex space-x-10">
+              <nuxt-link to="/" class="text-base font-medium text-gray-500 hover:text-gray-900"> O nás </nuxt-link>
+              <nuxt-link to="/iot" class="text-base font-medium text-gray-500 hover:text-gray-900"> Internet of Things </nuxt-link>
+              <nuxt-link to="/dotace" class="text-base font-medium text-gray-500 hover:text-gray-900"> Dotace </nuxt-link>
+            </div>
+            <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+              <nuxt-link
+                to="/kontakt"
+                class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                >Kontakt
+              </nuxt-link>
+            </div>
           </div>
         </div>
 
@@ -60,11 +63,13 @@
               <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                   <div>
-                    <img class="h-8 w-auto" :src="logo" alt="SmartBridge" />
+                    <nuxt-link to="/">
+                      <img class="h-8 w-auto" :src="logo" alt="SmartBridge" />
+                    </nuxt-link>
                   </div>
                   <div class="-mr-2">
-                    <div
-                      @click="mobileMenuShow = !mobileMenuShow"
+                    <button
+                      @click="mobileMenuShow = false"
                       @keydown.esc="mobileMenuShow = false"
                       class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                     >
@@ -80,11 +85,11 @@
                       >
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
                       </svg>
-                    </div>
+                    </button>
                   </div>
                 </div>
                 <div class="mt-6">
-                  <nav class="grid grid-cols-1 gap-7" @click="mobileMenuShow = false" @keydown.enter="mobileMenuShow = false">
+                  <nav class="grid grid-cols-1 gap-7">
                     <nuxt-link to="/" @click="mobileMenuShow = false" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                       <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
                         <svg
@@ -149,7 +154,7 @@
                 </div>
               </div>
               <div class="py-6 px-5">
-                <div class="mt-6" @click="mobileMenuShow = false" @keydown.enter="mobileMenuShow = false">
+                <div class="mt-6" @click="showMobileMenu = false" @keydown.enter="window.alert('hide plz')">
                   <nuxt-link
                     to="/kontakt"
                     class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
