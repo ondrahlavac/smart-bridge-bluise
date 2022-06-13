@@ -10,7 +10,7 @@
             </nuxt-link>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
-            &nbsp;
+            &nbsp;help text..
             <button
               @click="mobileMenuShow = true"
               @keydown.enter="mobileMenuShow = true"
