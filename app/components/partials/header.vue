@@ -2,11 +2,8 @@
   <section>
     <header>
       <div class="relative bg-white">
-        <div
-          @click="mobileMenuShow = !mobileMenuShow"
-          @keydown.enter="mobileMenuShow = mobileMenuShow"
-          class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10"
-        >
+        <div class="relative z-20"></div>
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <nuxt-link to="/">
               <span class="sr-only">Smart Bridge</span>
@@ -44,7 +41,7 @@
             </nuxt-link>
           </div>
         </div>
-
+</div>
         <transition
           enter-active-class="duration-200 ease-out"
           enter-from-class="opacity-0 scale-95"
