@@ -10,8 +10,6 @@
             </nuxt-link>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
-            <p>Count is {{ count }}</p>
-            <button @click="count++" @keydown.enter="window.alert('test++')">TEST ++</button>
             <button
               @click="mobileMenuShow = true"
               @keydown.enter="mobileMenuShow = true"
