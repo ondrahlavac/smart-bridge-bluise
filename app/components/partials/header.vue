@@ -5,7 +5,7 @@
         <div class="relative z-20">
           <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
-              <nuxt-link to="/">
+              <nuxt-link to="/" @click="mobileMenuShow = !mobileMenuShow" @keydown.enter="mobileMenuShow = !mobileMenuShow">
                 <span class="sr-only">Smart Bridge</span>
                 <img class="h-8 w-auto sm:h-10" :src="logo" alt="SmartBridge" />
               </nuxt-link>
@@ -14,7 +14,7 @@
               <p class="block md:hidden text-center text-white">&nbsp;...<br />&nbsp;</p>
               <button
                 @click="mobileMenuShow = !mobileMenuShow"
-                @keydown.enter="mobileMenuShow = mobileMenuShow"
+                @keydown.enter="mobileMenuShow = !mobileMenuShow"
                 class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               >
                 <span class="sr-only">Otevřít nabídku</span>
@@ -32,13 +32,37 @@
               </button>
             </div>
             <div class="hidden md:flex space-x-10">
-              <nuxt-link to="/" class="text-base font-medium text-gray-500 hover:text-gray-900"> O nás </nuxt-link>
-              <nuxt-link to="/iot" class="text-base font-medium text-gray-500 hover:text-gray-900"> Internet of Things </nuxt-link>
-              <nuxt-link to="/dotace" class="text-base font-medium text-gray-500 hover:text-gray-900"> Dotace </nuxt-link>
+              <nuxt-link
+                to="/"
+                to="/"
+                @click="mobileMenuShow = !mobileMenuShow"
+                @keydown.enter="mobileMenuShow = !mobileMenuShow"
+                class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                O nás
+              </nuxt-link>
+              <nuxt-link
+                to="/iot"
+                @click="mobileMenuShow = !mobileMenuShow"
+                @keydown.enter="mobileMenuShow = !mobileMenuShow"
+                class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Internet of Things
+              </nuxt-link>
+              <nuxt-link
+                to="/dotace"
+                @click="mobileMenuShow = !mobileMenuShow"
+                @keydown.enter="mobileMenuShow = !mobileMenuShow"
+                class="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Dotace
+              </nuxt-link>
             </div>
             <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <nuxt-link
                 to="/kontakt"
+                @click="mobileMenuShow = !mobileMenuShow"
+                @keydown.enter="mobileMenuShow = !mobileMenuShow"
                 class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
                 >Kontakt
               </nuxt-link>
