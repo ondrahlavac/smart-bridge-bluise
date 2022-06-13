@@ -10,6 +10,7 @@
             </nuxt-link>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
+            &nbsp;
             <button
               @click="mobileMenuShow = true"
               @keydown.enter="mobileMenuShow = true"
@@ -179,7 +180,5 @@ export default class Header extends Vue {
   logo = settings.logo;
 
   mobileMenuShow = false;
-
-  count = 0;
 }
 </script>
