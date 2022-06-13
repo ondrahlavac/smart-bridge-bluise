@@ -10,7 +10,7 @@
             </nuxt-link>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
-            <div
+            <button
               @click="mobileMenuShow = true"
               @keydown.enter="mobileMenuShow = true"
               class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -27,7 +27,7 @@
               >
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
-            </div>
+            </button>
           </div>
           <div class="hidden md:flex space-x-10">
             <nuxt-link to="/" class="text-base font-medium text-gray-500 hover:text-gray-900"> O nás </nuxt-link>
