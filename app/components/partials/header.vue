@@ -5,7 +5,7 @@
         <div class="relative z-20">
           <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
             <div class="flex justify-start lg:w-0 lg:flex-1">
-              <nuxt-link to="/">
+              <nuxt-link to="/" @click="mobileMenuShow = !mobileMenuShow" @keydown.enter="mobileMenuShow = !mobileMenuShow">
                 <span class="sr-only">Smart Bridge</span>
                 <img class="h-8 w-auto sm:h-10" :src="logo" alt="SmartBridge" />
               </nuxt-link>
@@ -14,7 +14,7 @@
               <p class="block md:hidden text-center text-white">&nbsp;...<br />&nbsp;</p>
               <button
                 @click="mobileMenuShow = !mobileMenuShow"
-                @keydown.enter="mobileMenuShow = mobileMenuShow"
+                @keydown.enter="mobileMenuShow = !mobileMenuShow"
                 class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               >
                 <span class="sr-only">Otevřít nabídku</span>
@@ -63,7 +63,7 @@
               <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                   <div>
-                    <nuxt-link to="/">
+                    <nuxt-link to="/" @click="mobileMenuShow = !mobileMenuShow" @keydown.enter="mobileMenuShow = !mobileMenuShow">
                       <img class="h-8 w-auto" :src="logo" alt="SmartBridge" />
                     </nuxt-link>
                   </div>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="mt-6">
                   <nav class="grid grid-cols-1 gap-7">
-                    <nuxt-link to="/" @click="mobileMenuShow = false" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                    <nuxt-link to="/" @click.native="mobileMenuShow = false" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                       <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
                         <svg
                           class="h-6 w-6"
@@ -110,7 +110,11 @@
                       </div>
                       <div class="ml-4 text-base font-medium text-gray-900">O nás</div>
                     </nuxt-link>
-                    <nuxt-link to="/iot" @click="mobileMenuShow = false" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                    <nuxt-link
+                      to="/iot"
+                      @click.native="mobileMenuShow = false"
+                      class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+                    >
                       <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
                         <svg
                           class="h-6 w-6"
@@ -130,7 +134,11 @@
                       </div>
                       <div class="ml-4 text-base font-medium text-gray-900">Internet of Things</div>
                     </nuxt-link>
-                    <nuxt-link to="/dotace" @click="mobileMenuShow = false" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                    <nuxt-link
+                      to="/dotace"
+                      @click.native="mobileMenuShow = false"
+                      class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
+                    >
                       <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-500 text-white">
                         <svg
                           class="h-6 w-6"
@@ -154,7 +162,7 @@
                 </div>
               </div>
               <div class="py-6 px-5">
-                <div class="mt-6" @click="showMobileMenu = false" @keydown.enter="window.alert('hide plz')">
+                <div class="mt-6" @click="mobileMenuShow = false" @keydown.enter="mobileMenuShow = false">
                   <nuxt-link
                     to="/kontakt"
                     class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
