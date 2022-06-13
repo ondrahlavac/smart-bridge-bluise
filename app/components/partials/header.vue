@@ -61,7 +61,9 @@
               <div class="pt-5 pb-6 px-5">
                 <div class="flex items-center justify-between">
                   <div>
-                    <img class="h-8 w-auto" :src="logo" alt="SmartBridge" />
+                    <nuxt-link to="/">
+                      <img class="h-8 w-auto" :src="logo" alt="SmartBridge" />
+                    </nuxt-link>
                   </div>
                   <div class="-mr-2">
                     <button
